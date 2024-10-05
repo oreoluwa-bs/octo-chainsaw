@@ -29,7 +29,6 @@ const columns2 = computed(() => groupInX(props.photos, 2))
   ---gap: 0.5rem;
   ---cols: 2;
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); */
   grid-template-columns: repeat(var(---cols), 1fr);
   gap: var(---gap);
 }
@@ -37,7 +36,6 @@ const columns2 = computed(() => groupInX(props.photos, 2))
 @media screen and (min-width: 400px) {
   .photo-card__list {
     ---gap: 1rem;
-    /* ---cols: 3; */
   }
 }
 
